@@ -68,4 +68,19 @@ public class Calculadora {
                 throw new IllegalArgumentException("Base de destino no soportada");
         }
     }
+    // Método que verifica si un elemento está en la lista
+    public boolean Encuentra(int[] lista, int elemento) {
+        for (int num : lista) {
+            if (num == elemento) {
+                return true; // Retorna true si encuentra el elemento
+            }
+        }
+        return false; // Retorna false si no encuentra el elemento
+    }
+
+
+
+
+
+
 }
