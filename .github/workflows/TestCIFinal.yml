@@ -40,7 +40,7 @@ jobs:
 
       # Execute unit tests
       - name: Grant execute permission for gradlew
-        run: chomd +x gradlew
+        run: chmod +x gradlew
 
       # Execute unit tests
       - name: Run unit test with Gradle
