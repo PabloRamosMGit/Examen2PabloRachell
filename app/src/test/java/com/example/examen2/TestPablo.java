@@ -28,7 +28,9 @@ public class TestPablo {
         assertEquals(0, Calculadora.realizarOperacion(7, 0, "*"));
         assertEquals(-6, Calculadora.realizarOperacion(2, -3, "*"));
         assertEquals(7, Calculadora.realizarOperacion(7, 1, "*"));
-        assertEquals(25, Calculadora.realizarOperacion(-5, -5, "*")); //Verificar negativos
+        assertEquals(25, Calculadora.realizarOperacion(-5, -5, "*"));
+        //Fallar el test para que no se pueda hacer el CI
+        assertEquals(20, Calculadora.realizarOperacion(-5, -5, "*"));//Verificar negativos
     }
 
     @Test
